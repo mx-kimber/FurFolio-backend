@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Commission logs</h1>
+
+<div id="commission_logs">
+  <% @commission_logs.each do |commission_log| %>
+    <%= render commission_log %>
+    <p>
+      <%= link_to "Show this commission log", commission_log %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New commission log", new_commission_log_path %>

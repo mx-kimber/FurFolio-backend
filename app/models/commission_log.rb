@@ -1,0 +1,2 @@
+class CommissionLog < ApplicationRecord
+end
